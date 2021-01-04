@@ -31,6 +31,21 @@ Please remove the `LICENSE` file when creating private repositories or change to
 8. When `dev` branch collected enough update and tested sufficiently, `release/subproject/#` or `release/package` will create from `dev`.
 9. `release/subproject/#` merge to `master` only if `demo` confirmed safe.
 10. `release/YYYYQ#` will create quarterly for whole project.
+
 11. Do **NOT** commit any user-secrets, password, unnecessary config files, your own shell script files, large binary files (image, audio, video) into the repo.
+
 12. It will be better to involve only one person in a pull-request if possible for easier tracking code changes with Squash & Merge option.
+
 13. Your pull-requests should have **ALL** warnings and errors fixed as stated in both GitHub tools (e.g. Codefactor) and static code analysis tools in your IDE. (e.g. JetBrains Rider / R# in Visual Studio).
+
+14. Local build scripts (`.bat` on windows `.sh` on *nix based OS) should be excluded from repository commit. By default your local scripts should named in `local-*.[bat|sh]` pattern.
+
+15. Environment variables checker must be implemented in your app no matter its frontend vue or backend dotnet code instead of using magic default numbers/strings.
+
+16. Your code need to work in the following environments in sequence:
+- `local development build`
+- `local release build`
+- `local container environment`
+- `public cloud development environment`
+- `public cloud staging/demo environment`
+- `public cloud production environment` 
