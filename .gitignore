@@ -765,3 +765,5 @@ dist
 
 # exclude local shell scripts
 local-*.sh
+# exclude local .net solution files
+.sln
