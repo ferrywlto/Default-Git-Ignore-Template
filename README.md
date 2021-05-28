@@ -1,7 +1,5 @@
 # Default .gitignore repository template
-Using this repo to save time from editing .gitignore to ignore MacOS and JetBrains file on top of Visual Studio setting.
-
-Please remove the `LICENSE` file when creating private repositories or change to other [LICENSE](https://choosealicense.com/) file to suit your needs.
+Using this repo to save time from editing .gitignore to ignore MacOS and JetBrains file on top of Visual Studio setting. Please remove the `LICENSE` file when creating private repositories or change to other [LICENSE](https://choosealicense.com/) file to suit your needs.
 
 ## Rules of development:
 1. Direct commit to `master`, `dev`, `demo` has disabled.
@@ -12,7 +10,6 @@ Please remove the `LICENSE` file when creating private repositories or change to
 
 | `fix` | `feature` | `enhancement` | `code-quality` |
 | :- | :- | :- | :- |
-| `bug`, `ui/ux` | `feature` | `enhancement` | `code-quality` | 
 | Things not working as expected / not working. | New functional requirement to add to project. | Modify current code for non-functional requirement. / Enhance exisiting feature. | Code quality problem discovered manually or by CI/CD tools or by static code analysis tools. |   
 
 4. Create **one** branch for **one** issue to do **one** thing at a time. Then create pull-request to merge back to `dev` branch. **(1-1-1 SRP Rule)**
