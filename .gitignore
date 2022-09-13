@@ -763,6 +763,12 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# Terraform
+.terraform
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+
 # exclude local shell scripts
 local-*.sh
 # exclude local .net solution files
