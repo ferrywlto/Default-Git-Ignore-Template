@@ -768,6 +768,7 @@ dist
 .terraform.lock.hcl
 terraform.tfstate
 terraform.tfstate.backup
+*.tfvars
 
 # exclude local shell scripts
 local-*.sh
