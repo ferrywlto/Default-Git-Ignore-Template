@@ -769,6 +769,8 @@ dist
 terraform.tfstate
 terraform.tfstate.backup
 *.tfvars
+.terraformrc
+terraform.rc
 
 # exclude local shell scripts
 local-*.sh
